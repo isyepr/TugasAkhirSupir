@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background"
+    android:padding="3dp"
+    tools:context=".PengangkutanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:fontFeatureSettings="b"
+                android:text="Status TPS"
+                android:textAlignment="center"
+                android:textColor="#00204a"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                card_view:cardElevation="10dp"
+                card_view:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/tps"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewNamaTps"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:text="TPS Sungai Ulin"
+                                    android:textAlignment="center"
+                                    android:textColor="#00204a"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/kosongButton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/rec_gradient3"
+                                        android:text="Kosong"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp" />
+
+                                    <Button
+                                        android:id="@+id/tidakAngkutButton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/rec_gradient3"
+                                        android:text="Lewati"
+                                        android:visibility="invisible"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border"
+                                    android:orientation="vertical">
+
+                                    <Button
+                                        android:id="@+id/terisiButton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/rec_gradient2"
+                                        android:text="Terisi"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp" />
+
+                                    <Button
+                                        android:id="@+id/angkutButton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginTop="7dp"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/rec_gradient2"
+                                        android:text="Angkut"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kembaliButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/rec_gradient"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="sans-serif-black"
+                android:text="Kembali"
+                android:textColor="#005792 "
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

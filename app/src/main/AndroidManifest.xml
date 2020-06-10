@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testtugasakhir">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/angkut"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/angkut"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".TrackingService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDrFiB2q77pz4hT69Yzbsrhf4nW_BEq6z8" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RuteActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PengangkutanActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditProfilActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
